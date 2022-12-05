@@ -14,13 +14,25 @@ console.log("JS OK");
 const targetElement = document.getElementById("target");
 console.log("target");
 
+
+
 // 1- chiedere all'utente il numero di km che vuole percorrere
 const userKm = parseInt(prompt (" Quanti chilometri vuoi percorrere?").trim());
 console.log("userKm" + userKm);
 
+//! VALIDATION USERKM
+if (isNaN(userKm) ){
+    alert ("Devi inserire un numero !")
+}
+
 // 2 - chiedere all'utente quanti anni ha
 const userAge = parseInt(prompt (" Quanti anni hai?").trim());
 console.log("userAge" + userAge);
+
+//! VALIDATION USERAGE
+if (isNaN(userAge) ){
+    alert ("Devi inserire un numero !")
+}
 
 // PRICE FUEL
 const fuelPrice = 0.21;
