@@ -29,6 +29,10 @@ if (userKm < 0) {
     console.log("il numero è maggiore di 0")
 }
 
+if (userKm > 1000) {
+    alert ("Devi inserire un numero minore di mille!")
+}
+
 // 2 - chiedere all'utente quanti anni ha
 const userAge = parseInt(prompt (" Quanti anni hai?").trim());
 console.log("userAge" + userAge);
@@ -40,6 +44,10 @@ if (isNaN(userAge) ){
 
 if (userAge < 0) {
     alert ("Devi inserire un numero maggiore di zero!")
+}
+
+if (userAge > 99) {
+    alert ("Devi inserire un numero minore di cento!")
 }
 
 // PRICE FUEL
