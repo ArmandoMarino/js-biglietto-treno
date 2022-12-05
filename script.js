@@ -25,6 +25,11 @@ if (isNaN(userKm) ){
     alert ("Devi inserire un numero !")
 }
 
+if (userKm < 0) {
+} else {
+    alert ("Devi inserire un numero maggiore di zero!")
+}
+
 // 2 - chiedere all'utente quanti anni ha
 const userAge = parseInt(prompt (" Quanti anni hai?").trim());
 console.log("userAge" + userAge);
@@ -32,6 +37,11 @@ console.log("userAge" + userAge);
 //! VALIDATION USERAGE
 if (isNaN(userAge) ){
     alert ("Devi inserire un numero !")
+}
+
+if (userAge < 0) {
+} else {
+    alert ("Devi inserire un numero maggiore di zero!")
 }
 
 // PRICE FUEL
@@ -46,20 +56,20 @@ const percentMinor = 80;
 const saleMajor = (percentMajor / 100) * userKm;
 console.log ("saleMajor" + saleMajor);
 
-saleMajor.toFixed(2);
 
 // SALE MINORS
 const saleMinor = (percentMinor / 100) * userKm;
 console.log ("saleMinor" + saleMinor);
 
-saleMinor.toFixed(2);
 
 // TOTAL
 let total = (saleMajor * fuelPrice);
 console.log("total" + total);
 
-total.toFixed(2);
-
+//! VALIDATION TOTAL
+if (isNaN(total) ){
+    alert ("Ripeti il formulario inserendo solo numeri !")
+}
 
 let message = "Il prezzo del biglietto è" +" "+ total;
 if(userAge < 18 ){
