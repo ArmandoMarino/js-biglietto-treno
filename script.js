@@ -11,7 +11,31 @@ console.log("JS OK");
 
 
 // 0 - prendo l'elemento nel DOM
-const targetElement = document.getElementById("target;")
+const targetElement = document.getElementById("target;");
 console.log("target");
+
+// 1- chiedere all'utente il numero di km che vuole percorrere
+const userKm = parseInt(prompt (" Quanti chilometri vuoi percorrere?").trim());
+console.log("userKm" + userKm);
+
+// 2 - chiedere all'utente quanti anni ha
+const userAge = parseInt(prompt (" Quanti anni hai?").trim());
+console.log("userAge" + userAge);
+
+// PRICE FUEL
+const fuelPrice = 0.21;
+
+// PRECENTUALE a 40 %
+const percentToGet = 40;
+
+
+const saleMajor = (percentToGet / 100) * userKm;
+console.log ("saleMajor" + saleMajor)
+
+let total = (saleMajor * fuelPrice);
+console.log = ("total" + total)
+
+
+
 
 
