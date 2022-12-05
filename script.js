@@ -26,9 +26,9 @@ console.log("userAge" + userAge);
 const fuelPrice = 0.21;
 
 // PRECENTUALE a 40 %
-const percentMajor = 40;
+const percentMajor = 60;
 // PRECENTUALE a 20 %
-const percentMinor = 20;
+const percentMinor = 80;
 
 // SALE OVER 60
 const saleMajor = (percentMajor / 100) * userKm;
@@ -47,9 +47,9 @@ let total = (saleMajor * fuelPrice);
 console.log("total" + total);
 
 
-let message = "Il prezzo del biglietto è" + " " + total;
+let message = "Il prezzo del biglietto è" +" "+ total;
 if(userAge < 18 ){
-    message = "Il prezzo del biglietto è" + " " + (saleMinor * fuelPrice);
+    message = "Il prezzo del biglietto è" +" "+ (saleMinor * fuelPrice);
 }
 
 
