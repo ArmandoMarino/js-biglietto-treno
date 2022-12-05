@@ -46,17 +46,19 @@ const percentMinor = 80;
 const saleMajor = (percentMajor / 100) * userKm;
 console.log ("saleMajor" + saleMajor);
 
-saleMajor.toFixed(1);
+saleMajor.toFixed(2);
 
 // SALE MINORS
 const saleMinor = (percentMinor / 100) * userKm;
 console.log ("saleMinor" + saleMinor);
 
-saleMinor.toFixed(1);
+saleMinor.toFixed(2);
 
 // TOTAL
 let total = (saleMajor * fuelPrice);
 console.log("total" + total);
+
+total.toFixed(2);
 
 
 let message = "Il prezzo del biglietto è" +" "+ total;
@@ -65,8 +67,17 @@ if(userAge < 18 ){
 }
 
 
-targetElement.innerText = message;
+// targetElement.innerText = message;
 
+
+const markup = `
+<div id="target">
+ <p>
+    ${message}
+ </p>
+</div>
+`;
+document.body.innerHTML = markup;
 
 
 
