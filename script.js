@@ -30,20 +30,28 @@ const percentMajor = 40;
 // PRECENTUALE a 20 %
 const percentMinor = 20;
 
-
+// SALE OVER 60
 const saleMajor = (percentMajor / 100) * userKm;
 console.log ("saleMajor" + saleMajor)
 
+saleMajor.toFixed(1);
+
+// SALE MINORS
 const saleMinor = (percentMinor / 100) * userKm;
 console.log ("saleMinor" + saleMinor)
 
+saleMinor.toFixed(1);
 
+// TOTAL
 let total = (saleMajor * fuelPrice);
 console.log("total" + total)
 if(userAge < 18 ){
     total = (saleMinor * fuelPrice);
     alert (saleMinor * fuelPrice);
 }
+
+
+total.toFixed(1);
 
 
 
