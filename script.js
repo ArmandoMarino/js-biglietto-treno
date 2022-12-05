@@ -23,17 +23,26 @@ const userAge = parseInt(prompt (" Quanti anni hai?").trim());
 console.log("userAge" + userAge);
 
 // PRICE FUEL
-const fuelPrice = 0.21;
+const fuelPrice = (userKm * 0.21);
 
 // PRECENTUALE a 40 %
-const percentToGet = 40;
+const percentMajor = 40;
+// PRECENTUALE a 20 %
+const percentMinor = 20;
 
 
-const saleMajor = (percentToGet / 100) * userKm;
+const saleMajor = (percentMajor / 100) * userKm;
 console.log ("saleMajor" + saleMajor)
 
+const saleMinor = (percentMinor / 100) * userKm;
+console.log ("saleMajor" + saleMajor)
+
+
 let total = (saleMajor * fuelPrice);
-console.log = ("total" + total)
+console.log("total" + total)
+if(userAge < 18 ){
+    total = percentMinor;
+}
 
 
 
