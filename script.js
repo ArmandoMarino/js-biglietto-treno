@@ -41,7 +41,8 @@ console.log ("saleMinor" + saleMinor)
 let total = (saleMajor * fuelPrice);
 console.log("total" + total)
 if(userAge < 18 ){
-    total = percentMinor;
+    total = saleMinor * fuelPrice;
+    alert(saleMinor * fuelPrice);
 }
 
 
