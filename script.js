@@ -23,7 +23,7 @@ const userAge = parseInt(prompt (" Quanti anni hai?").trim());
 console.log("userAge" + userAge);
 
 // PRICE FUEL
-const fuelPrice = (userKm * 0.21);
+const fuelPrice = 0.21;
 
 // PRECENTUALE a 40 %
 const percentMajor = 40;
