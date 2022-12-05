@@ -26,8 +26,7 @@ if (isNaN(userKm) ){
 }
 
 if (userKm < 0) {
-} else {
-    alert ("Devi inserire un numero maggiore di zero!")
+    console.log("il numero è maggiore di 0")
 }
 
 // 2 - chiedere all'utente quanti anni ha
@@ -40,7 +39,6 @@ if (isNaN(userAge) ){
 }
 
 if (userAge < 0) {
-} else {
     alert ("Devi inserire un numero maggiore di zero!")
 }
 
