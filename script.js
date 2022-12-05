@@ -35,7 +35,7 @@ const saleMajor = (percentMajor / 100) * userKm;
 console.log ("saleMajor" + saleMajor)
 
 const saleMinor = (percentMinor / 100) * userKm;
-console.log ("saleMajor" + saleMajor)
+console.log ("saleMinor" + saleMinor)
 
 
 let total = (saleMajor * fuelPrice);
