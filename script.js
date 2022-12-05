@@ -11,7 +11,7 @@ console.log("JS OK");
 
 
 // 0 - prendo l'elemento nel DOM
-const targetElement = document.getElementById("target;");
+const targetElement = document.getElementById("target");
 console.log("target");
 
 // 1- chiedere all'utente il numero di km che vuole percorrere
@@ -32,27 +32,28 @@ const percentMinor = 20;
 
 // SALE OVER 60
 const saleMajor = (percentMajor / 100) * userKm;
-console.log ("saleMajor" + saleMajor)
+console.log ("saleMajor" + saleMajor);
 
 saleMajor.toFixed(1);
 
 // SALE MINORS
 const saleMinor = (percentMinor / 100) * userKm;
-console.log ("saleMinor" + saleMinor)
+console.log ("saleMinor" + saleMinor);
 
 saleMinor.toFixed(1);
 
 // TOTAL
 let total = (saleMajor * fuelPrice);
-console.log("total" + total)
+console.log("total" + total);
+
+
+let message = "Il prezzo del biglietto è" + " " + total;
 if(userAge < 18 ){
-    total = (saleMinor * fuelPrice);
-    alert (saleMinor * fuelPrice);
+    message = "Il prezzo del biglietto è" + " " + (saleMinor * fuelPrice);
 }
 
 
-total.toFixed(1);
-
+targetElement.innerText = message;
 
 
 
