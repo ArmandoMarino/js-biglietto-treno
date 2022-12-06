@@ -77,9 +77,9 @@ if (isNaN(total) ){
     alert ("Ripeti il formulario inserendo solo numeri !")
 }
 
-let message = "Il prezzo del biglietto è" +" "+ total;
+let message = "Il prezzo del biglietto è" +" "+ total.toFixed(2) + "€";
 if(userAge < 18 ){
-    message = "Il prezzo del biglietto è" +" "+ (saleMinor * fuelPrice);
+    message = "Il prezzo del biglietto è" +" "+ (saleMinor * fuelPrice)+ "€";
 }
 
 
